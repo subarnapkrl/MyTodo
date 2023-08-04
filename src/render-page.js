@@ -103,7 +103,7 @@ const renderMain = (content, projectTitle, index) => {
   projectMainDOM.appendChild(projectTopRow);
 
   // This section will have all the todos
-  const toDosDOM = document.createElement("secton");
+  const toDosDOM = document.createElement("section");
   toDosDOM.id = "todos-list";
   projectMainDOM.appendChild(toDosDOM);
 
