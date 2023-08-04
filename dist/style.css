@@ -4,6 +4,8 @@ body {
   padding: 0;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 18px;
+  background-color: #212121;
+  color: #fff;
 }
 
 #header {
@@ -12,8 +14,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #132257;
+  background: #0e7490;
   color: white;
+  padding: 10px;
 }
 
 #content {
@@ -27,17 +30,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f2f2f2;
+  background: #fee2e2;
   overflow-y: auto;
   overflow-x: hidden;
+  color: #212121;
 }
 
 #sidebar-top-wrapper {
   text-align: center;
+  font-size: 24px;
 }
 
 #new-project {
-  background: hsl(140, 100%, 30%);
+  background: #10b981;
   color: white;
   height: 2rem;
   font-size: 1.1rem;
@@ -52,7 +57,7 @@ body {
 /*Styling for list of projects in the sidebar*/
 #projects-list {
   width: 20vw;
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -61,8 +66,9 @@ body {
 .project-sidebar {
   height: 2rem;
   color: black;
+  font-size: 22px;
   font-weight: bolder;
-  border: none;
+  border: 1px solid black;
   background: #f2f2f2;
   text-align: left;
   padding-left: 4rem;
@@ -92,20 +98,31 @@ body {
 .todo {
   border: solid thin;
   padding: 0rem 0.3rem;
+  background-color: #71717a;
 }
 
 .todo-top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #71717a;
 }
 
 .todo-name-and-date {
   display: flex;
+  justify-content: space-between;
+}
+.todo-title {
+  margin-right: 16px;
 }
 
 .todo-details-hidden {
   display: none;
+}
+.todo-description,
+.todo-priority {
+  color: #212121;
+  font-weight: bold;
 }
 
 .todo-completed {
@@ -201,11 +218,50 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: hsla(0, 0%, 100%, 1);
+  background: #c4b5fd;
+  border-radius: 8px;
+  padding: 15px;
+}
+h3 {
+  text-decoration: underline;
+}
+form label,
+input {
+  margin-bottom: 8px;
+}
+
+#submit-project,
+#cancel-project,
+#submit-todo,
+#cancel-todo {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+#submit-project {
+  background-color: #fef08a;
+  border: 1px solid black;
+}
+
+#cancel-project {
+  background-color: #ef4444;
+  border: 1px solid black;
+}
+
+#submit-todo {
+  background-color: #fef08a;
+  border: 1px solid black;
+}
+
+#cancel-todo {
+  background-color: #ef4444;
+  border: 1px solid black;
 }
 
 #todo-form {
-  height: 50vh;
+  height: 80vh;
   width: 40vw;
   left: 35vw;
   top: 30vh;
@@ -215,7 +271,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: hsla(0, 0%, 100%, 1);
+  color: #212121;
+  border: 8px;
+  background: #a5f3fc;
 }
 
 /* Responsive design */
