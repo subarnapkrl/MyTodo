@@ -89,6 +89,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+#project-buttons {
+  display: flex;
+  justify-content: space-between;
+}
 /* #project-full through .low-priority styles the full display of a project
    and its todos*/
 
@@ -220,6 +224,9 @@ body {
 
 .check-todo:hover {
   background: hsl(260, 100%, 85%);
+}
+#todos-list {
+  margin-bottom: 10px;
 }
 #todos-list {
   margin-bottom: 10px;
