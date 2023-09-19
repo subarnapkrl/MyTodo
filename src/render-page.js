@@ -95,7 +95,7 @@ const renderMain = (content, projectTitle, index) => {
   deleteProjectButton.id = "delete-project";
   deleteProjectButton.classList.add("delete-button");
   deleteProjectButton.setAttribute("title", "Delete Project");
-  deleteProjectButton.innerHTML = "X";
+  deleteProjectButton.innerHTML = "Delete Project";
   projectButtonWrapper.appendChild(deleteProjectButton);
 
   projectTopRow.appendChild(projectButtonWrapper);

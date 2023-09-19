@@ -200,7 +200,7 @@ const renderToDo = (
   expandButton.classList.add("expand-todo");
   expandButton.setAttribute("title", "Expand task");
   expandButton.dataset.index = todoIndex;
-  expandButton.innerHTML = "+";
+  expandButton.innerHTML = "Description";
   todoButtons.appendChild(expandButton);
 
   const editButton = document.createElement("button");
@@ -223,7 +223,7 @@ const renderToDo = (
   deleteButton.classList.add("delete-button");
   deleteButton.setAttribute("title", "Delete task");
   deleteButton.dataset.index = todoIndex;
-  deleteButton.innerHTML = "X";
+  deleteButton.innerHTML = "Delete Todo";
   todoButtons.appendChild(deleteButton);
 
   todoTopRow.appendChild(todoButtons);
@@ -251,10 +251,10 @@ const renderToDo = (
 const expandToDo = (todoDOM) => {
   // Change expand button to opposite
   const expandButton = todoDOM.querySelector(".expand-todo");
-  if (expandButton.innerHTML === "+") {
-    expandButton.innerHTML = "-";
+  if (expandButton.innerHTML === "Description") {
+    expandButton.innerHTML = "Less";
   } else {
-    expandButton.innerHTML = "+";
+    expandButton.innerHTML = "Description";
   }
 
   // Toggle class for details section
